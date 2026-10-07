@@ -1,0 +1,289 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLA Cafe | Contact Us</title>
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9933; /* Saffron */
+        }
+        
+        .logo span {
+            color: #128807; /* Green */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #ff9933;
+            border-bottom: 2px solid #ff9933;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #fff5ec 0%, #f0fdf4 100%);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #128807;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            color: #ff9933;
+            margin-bottom: 10px;
+        }
+
+        /* Main Section Container */
+        .contact-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Information Column */
+        .info-box {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #ff9933;
+        }
+
+        .info-box h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 25px;
+        }
+
+        .info-item h3 {
+            font-size: 16px;
+            color: #ff9933;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-item p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Contact Form Column */
+        .form-box {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #128807;
+        }
+
+        .form-box h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: #128807;
+        }
+
+        .submit-btn {
+            background-color: #128807;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0f6e05;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 5px solid #ff9933;
+            margin-top: 60px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .nav-links {
+                margin-top: 15px;
+            }
+            .nav-links li {
+                margin: 0 10px;
+            }
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MLA <span>Cafe</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Our Menu</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you. Get in touch with our team.</p>
+    </header>
+
+    <!-- Main Grid Content -->
+    <main class="contact-container">
+
+        <!-- Column 1: Contact Details -->
+        <section class="info-box">
+            <h2>Get In Touch</h2>
+            
+            <div class="info-item">
+                <h3>📍 Our Location</h3>
+                <p>Shop No. 12, Assembly Square, Main Road,<br>Pune, Maharashtra - 411001</p>
+            </div>
+
+            <div class="info-item">
+                <h3>📞 Phone Number</h3>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="info-item">
+                <h3>✉️ Email Address</h3>
+                <p>info@mlacafe.com</p>
+            </div>
+
+            <div class="info-item">
+                <h3>🔔 Special Orders</h3>
+                <p>We accept bulk party catering and event orders. Contact us directly over phone for reservations.</p>
+            </div>
+        </section>
+
+        <!-- Column 2: Interactive Contact Form -->
+        <section class="form-box">
+            <h2>Send a Message</h2>
+            <form action="#" method="POST" onsubmit="alert('Thank you for reaching out! We will get back to you shortly.'); return false;">
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message / Feedback</label>
+                    <textarea id="message" rows="5" placeholder="Write your text here..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MLA Cafe. All Rights Reserved. | Tricolor Theme Design</p>
+    </footer>
+
+</body>
+</html>
