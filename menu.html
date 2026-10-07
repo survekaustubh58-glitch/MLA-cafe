@@ -1,0 +1,262 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLA Cafe | Our Menu</title>
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9933; /* Saffron */
+        }
+        
+        .logo span {
+            color: #128807; /* Green */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: #ff9933;
+            border-bottom: 2px solid #ff9933;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #fff5ec 0%, #f0fdf4 100%);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px solid #128807;
+        }
+
+        .page-header h1 {
+            font-size: 36px;
+            color: #ff9933;
+            margin-bottom: 10px;
+        }
+
+        /* Menu Layout Container */
+        .menu-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .menu-section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid #ff9933;
+            margin-bottom: 40px;
+        }
+
+        .menu-section h2 {
+            font-size: 24px;
+            color: #ff9933;
+            margin-bottom: 20px;
+            border-bottom: 2px dashed #eee;
+            padding-bottom: 10px;
+        }
+
+        /* Menu Items List */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 10px;
+            border-bottom: 1px dotted #ddd;
+        }
+
+        .item-details h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 4px;
+        }
+
+        .item-details p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .item-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #128807;
+            white-space: nowrap;
+        }
+
+        .tag-special {
+            background-color: #ff9933;
+            color: white;
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 5px solid #ff9933;
+            margin-top: 60px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .nav-links {
+                margin-top: 15px;
+            }
+            .nav-links li {
+                margin: 0 10px;
+            }
+            .menu-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MLA <span>Cafe</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html" class="active">Our Menu</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1>Our Menu</h1>
+        <p>Fresh, flavorful, and freshly served to order.</p>
+    </header>
+
+    <!-- Menu Items Container -->
+    <main class="menu-container">
+
+        <!-- Category 1: Hot Beverages -->
+        <section class="menu-section">
+            <h2>☕ Hot Beverages</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>MLA Special Masala Tea <span class="tag-special">Popular</span></h3>
+                        <p>Our signature strong tea brewed with fresh ginger, cardamom, and secret spices.</p>
+                    </div>
+                    <div class="item-price">₹20</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Filter Coffee</h3>
+                        <p>Authentic South Indian style strong frothy filter coffee.</p>
+                    </div>
+                    <div class="item-price">₹30</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Black Lemon Tea</h3>
+                        <p>Freshly brewed black tea infused with lemon juice and honey.</p>
+                    </div>
+                    <div class="item-price">₹25</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category 2: Authentic Snacks -->
+        <section class="menu-section">
+            <h2>🍔 Premium Snacks</h2>
+            <div class="menu-list">
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Special Misal Pav <span class="tag-special">Must Try</span></h3>
+                        <p>Spicy moth bean sprout curry topped with farsan, onions, served with soft pav.</p>
+                    </div>
+                    <div class="item-price">₹80</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Classic Vada Pav</h3>
+                        <p>Piping hot fried potato dumpling stuffed inside a bun slice layered with green & dry garlic chutney.</p>
+                    </div>
+                    <div class="item-price">₹25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-details">
+                        <h3>Cheese Grilled Sandwich</h3>
+                        <p>Crispy toasted sandwich packed with fresh vegetables, mint chutney, and loaded cheddar cheese.</p>
+                    </div>
+                    <div class="item-price">₹90</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 MLA Cafe. All Rights Reserved. | Tricolor Theme Design</p>
+    </footer>
+
+</body>
+</html>
